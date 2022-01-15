@@ -1,0 +1,11 @@
+#giving bullet points to para/lines.
+#NOTE : after pasting your para/lines please type ctrl+d for giving bullet points.
+
+import sys
+text = sys.stdin.read()
+lines = text.split('\n')
+for i in range(len(lines)):
+        lines[i] = '* ' + lines[i]
+        print(lines[i])
+        
+  
